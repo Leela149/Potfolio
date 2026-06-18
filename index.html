@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leela Priya Kala | Full Stack Developer & AI/ML Enthusiast</title>
+    
+    <!-- Meta tags for SEO -->
+    <meta name="description" content="Portfolio of Leela Priya Kala, a motivated Full Stack Developer & AI/ML Enthusiast. Check out my projects, internships, and skill set.">
+    <meta name="keywords" content="Leela Priya Kala, Portfolio, Full Stack Developer, Python, Java, AI, ML, Web Development, India">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Custom Cursor Effect -->
+    <div class="custom-cursor"></div>
+    <div class="custom-cursor-dot"></div>
+
+    <!-- Header Navigation -->
+    <header class="header">
+        <div class="container nav-container">
+            <a href="#home" class="logo" id="nav-logo">
+                <span class="logo-dot"></span>LPK.dev
+            </a>
+            
+            <nav class="nav-menu" id="nav-menu">
+                <ul>
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#experience" class="nav-link">Experience</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#education" class="nav-link">Education</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-actions">
+                <!-- Theme Toggle -->
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                    <i class="fa-solid fa-moon moon-icon"></i>
+                    <i class="fa-solid fa-sun sun-icon"></i>
+                </button>
+                
+                <!-- Mobile Menu Button -->
+                <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Open menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="hero-bg-blobs">
+                <div class="blob blob-1"></div>
+                <div class="blob blob-2"></div>
+                <div class="blob blob-3"></div>
+            </div>
+            
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <span class="welcome-badge"><i class="fa-solid fa-graduation-cap"></i> CSE Graduate</span>
+                    <h1 class="hero-title">
+                        Hi, I'm <span class="gradient-text">Leela Priya Kala</span>
+                    </h1>
+                    <h2 class="hero-subtitle">
+                        I am a <span id="typewriter-text" class="typewriter"></span><span class="cursor">|</span>
+                    </h2>
+                    <p class="hero-desc">
+                        A passionate developer with hands-on experience building scalable applications using modern technologies. 
+                        Specialize in Python, Java, web technologies, and AI & Machine Learning.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">
+                            <span>View Projects</span> <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <a href="#contact" class="btn btn-secondary">
+                            <span>Get in Touch</span>
+                        </a>
+                    </div>
+                    
+                    <div class="social-links hero-socials">
+                        <a href="https://www.linkedin.com/in/kala-leela-priya-a9b7aa2a5" target="_blank" rel="noopener" aria-label="LinkedIn">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com/Leela149" target="_blank" rel="noopener" aria-label="GitHub">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="mailto:leelapriyakala@gmail.com" aria-label="Email">
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="hero-visual">
+                    <div class="visual-card">
+                        <div class="circle-graphic">
+                            <img src="assets/avatar.png" alt="Leela Priya Kala - Developer Avatar" class="profile-avatar">
+                        </div>
+                        
+                        <!-- Floating Tech Badges -->
+                        <div class="floating-badge badge-python">
+                            <i class="fa-brands fa-python"></i> <span>Python</span>
+                        </div>
+                        <div class="floating-badge badge-java">
+                            <i class="fa-brands fa-java"></i> <span>Java</span>
+                        </div>
+                        <div class="floating-badge badge-ai">
+                            <i class="fa-solid fa-brain"></i> <span>AI & ML</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <a href="#about" class="scroll-indicator" aria-label="Scroll to about section">
+                <span class="mouse-icon">
+                    <span class="wheel"></span>
+                </span>
+            </a>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section reveal">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">About Me</span>
+                    <h2 class="section-title">My Professional Narrative</h2>
+                    <div class="section-line"></div>
+                </div>
+                
+                <div class="about-grid">
+                    <div class="about-info">
+                        <h3 class="about-subtitle">Transforming code into business and AI solutions.</h3>
+                        <p class="about-desc">
+                            As a Computer Science and Engineering graduate, I approach software engineering with a balance of backend robustness, frontend aesthetics, and intelligent algorithms. My internships and training have given me practical exposure in writing clean, modular code, database design, and deep learning implementations.
+                        </p>
+                        <p class="about-desc">
+                            I thrive on solving complex technical problems and am seeking a developer role to contribute to transformative projects. I am continuously learning to stay aligned with the latest industry standards and tech advancements.
+                        </p>
+                        
+                        <!-- Metric Cards -->
+                        <div class="metrics-grid">
+                            <div class="metric-card">
+                                <span class="metric-num">7.15</span>
+                                <span class="metric-label">B.Tech CGPA</span>
+                            </div>
+                            <div class="metric-card">
+                                <span class="metric-num">3</span>
+                                <span class="metric-label">Completed Internships</span>
+                            </div>
+                            <div class="metric-card">
+                                <span class="metric-num">2+</span>
+                                <span class="metric-label">Featured Projects</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="about-interests">
+                        <div class="glass-card interests-card">
+                            <h3>Quick Highlights</h3>
+                            <ul class="highlights-list">
+                                <li>
+                                    <span class="highlight-icon"><i class="fa-solid fa-check"></i></span>
+                                    <div>
+                                        <strong>Full-Stack Focus:</strong> Comfortable working across both client-side and server-side components.
+                                    </div>
+                                </li>
+                                <li>
+                                    <span class="highlight-icon"><i class="fa-solid fa-check"></i></span>
+                                    <div>
+                                        <strong>AI & ML Foundations:</strong> Experience applying Deep Learning models to real-world tasks like crowd anomaly detection.
+                                    </div>
+                                </li>
+                                <li>
+                                    <span class="highlight-icon"><i class="fa-solid fa-check"></i></span>
+                                    <div>
+                                        <strong>Agile-Ready:</strong> Trained in agile practices, unit testing, and collaborative software lifecycles.
+                                    </div>
+                                </li>
+                                <li>
+                                    <span class="highlight-icon"><i class="fa-solid fa-check"></i></span>
+                                    <div>
+                                        <strong>Active Learner:</strong> Passionate about solving competitive programming challenges and debugging.
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section reveal">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Capabilities</span>
+                    <h2 class="section-title">Technical Expertise</h2>
+                    <div class="section-line"></div>
+                </div>
+                
+                <div class="skills-grid">
+                    <!-- Programming Languages -->
+                    <div class="glass-card skill-category-card">
+                        <div class="skill-category-header">
+                            <i class="fa-solid fa-code"></i>
+                            <h3>Languages</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>Python</span>
+                                    <span>Advanced</span>
+                                </div>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 90%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>Java</span>
+                                    <span>Intermediate</span>
+                                </div>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 75%"></div></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Web Development -->
+                    <div class="glass-card skill-category-card">
+                        <div class="skill-category-header">
+                            <i class="fa-solid fa-laptop-code"></i>
+                            <h3>Web Development</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>Django (Python)</span>
+                                    <span>Intermediate</span>
+                                </div>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 80%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>HTML5 & CSS3</span>
+                                    <span>Advanced</span>
+                                </div>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 90%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>JavaScript (ES6+)</span>
+                                    <span>Intermediate</span>
+                                </div>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 70%"></div></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Databases & Systems -->
+                    <div class="glass-card skill-category-card">
+                        <div class="skill-category-header">
+                            <i class="fa-solid fa-database"></i>
+                            <h3>Databases & Tools</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>SQL / MySQL</span>
+                                    <span>Intermediate</span>
+                                </div>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 80%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>SQLite</span>
+                                    <span>Advanced</span>
+                                </div>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 85%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>Git / GitHub</span>
+                                    <span>Intermediate</span>
+                                </div>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 75%"></div></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- AI & Machine Learning -->
+                    <div class="glass-card skill-category-card">
+                        <div class="skill-category-header">
+                            <i class="fa-solid fa-brain"></i>
+                            <h3>AI & Deep Learning</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>Machine Learning (Scikit-Learn)</span>
+                                    <span>Intermediate</span>
+                                </div>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 70%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>Deep Learning (CNN / Crowd Anomaly)</span>
+                                    <span>Intermediate</span>
+                                </div>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 75%"></div></div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience / Internships Section -->
+        <section id="experience" class="experience-section reveal">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">History</span>
+                    <h2 class="section-title">Internships & Training</h2>
+                    <div class="section-line"></div>
+                </div>
+                
+                <div class="timeline">
+                    <!-- Experience 1 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">10/2025 – 05/2026</div>
+                        <div class="glass-card timeline-content">
+                            <h3 class="experience-title">Full Stack Development Training</h3>
+                            <span class="experience-org">KodNest</span>
+                            <p class="experience-desc">
+                                Completed an intensive, six-month Full Stack Development training. Covered comprehensive syllabus elements including:
+                            </p>
+                            <ul class="experience-bullets">
+                                <li>Solidified backend logic using Java & Python, and structured databases using SQL.</li>
+                                <li>Strengthened frontend styling and structure with Web Development modules.</li>
+                                <li>Engaged in competitive programming exercises, debugging, and robust software testing procedures.</li>
+                                <li>Developed hands-on experience in mock sprint cycles to construct, refine, and deploy full stack projects.</li>
+                            </ul>
+                            <div class="tech-tags">
+                                <span>Java</span>
+                                <span>Python</span>
+                                <span>SQL</span>
+                                <span>Web Development</span>
+                                <span>Testing</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Experience 2 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">06/2025 – 08/2025</div>
+                        <div class="glass-card timeline-content">
+                            <h3 class="experience-title">AI & ML Intern</h3>
+                            <span class="experience-org">Besant Technologies</span>
+                            <p class="experience-desc">
+                                Enrolled and successfully completed structured training and practical exercises in AI and Machine Learning:
+                            </p>
+                            <ul class="experience-bullets">
+                                <li>Covered foundational machine learning paradigms: supervised, unsupervised, and reinforcement learning principles.</li>
+                                <li>Designed and deployed basic algorithms including linear regression, classification schemes, clustering (K-Means), and neural network configurations.</li>
+                                <li>Acquired knowledge of model evaluation metrics (precision, recall, accuracy curves) to tune model architectures.</li>
+                                <li>Engaged in guided projects under expert mentorship to analyze structured data sets and deliver actionable predictions.</li>
+                            </ul>
+                            <div class="tech-tags">
+                                <span>AI</span>
+                                <span>Machine Learning</span>
+                                <span>Algorithms</span>
+                                <span>Model Evaluation</span>
+                                <span>Data Analysis</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Experience 3 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">05/2024 – 07/2024</div>
+                        <div class="glass-card timeline-content">
+                            <h3 class="experience-title">Python Full Stack Intern</h3>
+                            <span class="experience-org">Excelr Pvt Ltd</span>
+                            <p class="experience-desc">
+                                Obtained hands-on industrial training in real-world full stack application engineering:
+                            </p>
+                            <ul class="experience-bullets">
+                                <li>Coded frontend components using HTML, CSS, and modern interactive JavaScript.</li>
+                                <li>Built backend application programming interfaces (APIs) and controllers utilizing Python.</li>
+                                <li>Managed relational databases by integrating MySQL with backend scripts for persistent data retrieval.</li>
+                                <li>Sharpened problem-solving capacities and teamwork coordination via real-time collaborative sprints and project deliverables.</li>
+                            </ul>
+                            <div class="tech-tags">
+                                <span>Python</span>
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                                <span>MySQL</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section reveal">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Works</span>
+                    <h2 class="section-title">Featured Projects</h2>
+                    <div class="section-line"></div>
+                </div>
+                
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <div class="glass-card project-card">
+                        <div class="project-img-container">
+                            <img src="assets/bitecart_original.png" alt="BiteCart food delivery application mockup" class="project-img">
+                            <div class="project-overlay">
+                                <a href="https://github.com/Leela149" target="_blank" rel="noopener" class="project-link-icon" aria-label="GitHub Repository"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-meta">
+                                <span class="project-category">Full Stack Web App</span>
+                                <span class="project-deployment"><i class="fa-solid fa-server"></i> PythonAnywhere</span>
+                            </div>
+                            <h3 class="project-title">BITECART</h3>
+                            <p class="project-desc">
+                                A feature-rich food delivery application built using Django, facilitating custom food ordering operations.
+                            </p>
+                            <ul class="project-features">
+                                <li><i class="fa-solid fa-circle-notch"></i> Restaurant listings and organized menus with customer-facing detail screens.</li>
+                                <li><i class="fa-solid fa-circle-notch"></i> Order tracking system for customers to trace their historical food orders.</li>
+                                <li><i class="fa-solid fa-circle-notch"></i> Support channel functionality designed to handle client queries dynamically.</li>
+                                <li><i class="fa-solid fa-circle-notch"></i> Local SQLite configuration transitioned and deployed onto PythonAnywhere clouds.</li>
+                            </ul>
+                            <div class="tech-tags">
+                                <span>Django</span>
+                                <span>Python</span>
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>SQLite</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Project 2 -->
+                    <div class="glass-card project-card">
+                        <div class="project-img-container">
+                            <img src="assets/anomaly.png" alt="Crowd abnormal behavior detection dashboard mockup" class="project-img">
+                            <div class="project-overlay">
+                                <a href="https://github.com/Leela149" target="_blank" rel="noopener" class="project-link-icon" aria-label="GitHub Repository"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-meta">
+                                <span class="project-category">Artificial Intelligence</span>
+                                <span class="project-deployment"><i class="fa-solid fa-microchip"></i> Hardware Integration</span>
+                            </div>
+                            <h3 class="project-title">ABNORMAL BEHAVIOUR DETECTION IN CROWD USING AI</h3>
+                            <p class="project-desc">
+                                An intelligent safety and surveillance system leveraging deep learning models for crowd pattern monitoring.
+                            </p>
+                            <ul class="project-features">
+                                <li><i class="fa-solid fa-circle-notch"></i> Real-time pattern detection alerts to immediately flag crowd anomalies.</li>
+                                <li><i class="fa-solid fa-circle-notch"></i> Multi-layer deep learning neural networks optimizing anomaly detection accuracy.</li>
+                                <li><i class="fa-solid fa-circle-notch"></i> Scalable, cost-effective structure tailored for public automated safety systems.</li>
+                                <li><i class="fa-solid fa-circle-notch"></i> Visual analysis engines linked with physical camera hardware components.</li>
+                            </ul>
+                            <div class="tech-tags">
+                                <span>AI</span>
+                                <span>Deep Learning</span>
+                                <span>Hardware Integration</span>
+                                <span>Python</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="education-section reveal">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Academics</span>
+                    <h2 class="section-title">Education Timeline</h2>
+                    <div class="section-line"></div>
+                </div>
+                
+                <div class="education-timeline">
+                    <!-- Edu 1 -->
+                    <div class="edu-card glass-card">
+                        <div class="edu-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                        <div class="edu-meta">
+                            <span class="edu-duration">2021 – 2025</span>
+                            <span class="edu-location"><i class="fa-solid fa-location-dot"></i> Tirupati, AP</span>
+                        </div>
+                        <h3 class="edu-degree">Bachelor of Technology</h3>
+                        <span class="edu-institution">Sri Padmavathi Mahila University</span>
+                        <p class="edu-details">Computer Science and Engineering</p>
+                        <div class="edu-grade">CGPA: <strong>7.15</strong></div>
+                    </div>
+                    
+                    <!-- Edu 2 -->
+                    <div class="edu-card glass-card">
+                        <div class="edu-icon"><i class="fa-solid fa-school"></i></div>
+                        <div class="edu-meta">
+                            <span class="edu-duration">2019 – 2021</span>
+                            <span class="edu-location"><i class="fa-solid fa-location-dot"></i> Cuddapah, AP</span>
+                        </div>
+                        <h3 class="edu-degree">Intermediate (Higher Secondary)</h3>
+                        <span class="edu-institution">Vivekananda Junior College</span>
+                        <p class="edu-details">Mathematics, Physics, Chemistry (MPC)</p>
+                        <div class="edu-grade">Percentage: <strong>85%</strong></div>
+                    </div>
+                    
+                    <!-- Edu 3 -->
+                    <div class="edu-card glass-card">
+                        <div class="edu-icon"><i class="fa-solid fa-book-open"></i></div>
+                        <div class="edu-meta">
+                            <span class="edu-duration">2018 – 2019</span>
+                            <span class="edu-location"><i class="fa-solid fa-location-dot"></i> Cuddapah, AP</span>
+                        </div>
+                        <h3 class="edu-degree">Secondary School Certificate (SSC)</h3>
+                        <span class="edu-institution">ZP High School</span>
+                        <p class="edu-details">General Curriculum</p>
+                        <div class="edu-grade">CGPA: <strong>8.8</strong></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section reveal">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Get in Touch</span>
+                    <h2 class="section-title">Connect With Me</h2>
+                    <div class="section-line"></div>
+                </div>
+                
+                <div class="contact-grid">
+                    <!-- Contact Cards -->
+                    <div class="contact-info">
+                        <div class="contact-details">
+                            <!-- Email Card -->
+                            <div class="glass-card contact-detail-card">
+                                <div class="detail-icon"><i class="fa-solid fa-envelope"></i></div>
+                                <div class="detail-text">
+                                    <h4>Email Address</h4>
+                                    <p id="email-text">leelapriyakala@gmail.com</p>
+                                </div>
+                                <button class="copy-btn" data-copy="leelapriyakala@gmail.com" aria-label="Copy Email">
+                                    <i class="fa-regular fa-copy"></i>
+                                </button>
+                            </div>
+                            
+                            <!-- Phone Card -->
+                            <div class="glass-card contact-detail-card">
+                                <div class="detail-icon"><i class="fa-solid fa-phone"></i></div>
+                                <div class="detail-text">
+                                    <h4>Phone Number</h4>
+                                    <p id="phone-text">+91 6300339895</p>
+                                </div>
+                                <button class="copy-btn" data-copy="6300339895" aria-label="Copy Phone">
+                                    <i class="fa-regular fa-copy"></i>
+                                </button>
+                            </div>
+                            
+                            <!-- Location Card -->
+                            <div class="glass-card contact-detail-card">
+                                <div class="detail-icon"><i class="fa-solid fa-location-dot"></i></div>
+                                <div class="detail-text">
+                                    <h4>Current Location</h4>
+                                    <p>Andhra Pradesh, India</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-social-prompt">
+                            <h3>Let's collaborate on code!</h3>
+                            <p>Feel free to reach out through email, phone, or LinkedIn. I am always open to exploring developer opportunities, tech discussions, and cool project collaborations.</p>
+                            
+                            <div class="social-links contact-links">
+                                <a href="https://www.linkedin.com/in/kala-leela-priya-a9b7aa2a5" target="_blank" rel="noopener" aria-label="LinkedIn">
+                                    <i class="fa-brands fa-linkedin-in"></i> LinkedIn
+                                </a>
+                                <a href="https://github.com/Leela149" target="_blank" rel="noopener" aria-label="GitHub">
+                                    <i class="fa-brands fa-github"></i> GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Contact Form -->
+                    <div class="glass-card contact-form-container">
+                        <!-- To receive emails, replace the placeholder URL with your Formspree endpoint (e.g., https://formspree.io/f/your_id) -->
+                        <form id="contact-form" action="https://formspree.io/f/YOUR_FORMSPREE_ID_HERE" method="POST">
+                            <div class="form-row">
+                                <div class="input-group">
+                                    <input type="text" id="name" name="name" required placeholder=" ">
+                                    <label for="name">Your Name</label>
+                                </div>
+                                <div class="input-group">
+                                    <input type="email" id="email" name="email" required placeholder=" ">
+                                    <label for="email">Your Email</label>
+                                </div>
+                            </div>
+                            
+                            <div class="input-group">
+                                <input type="text" id="subject" name="subject" required placeholder=" ">
+                                <label for="subject">Subject</label>
+                            </div>
+                            
+                            <div class="input-group">
+                                <textarea id="message" name="message" rows="5" required placeholder=" "></textarea>
+                                <label for="message">Your Message</label>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary form-submit-btn">
+                                <span class="submit-text">Send Message</span>
+                                <span class="submit-spinner"><i class="fa-solid fa-circle-notch fa-spin"></i></span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-logo">
+                <span class="logo-dot"></span>LPK.dev
+            </div>
+            
+            <p class="copyright">&copy; <span id="current-year"></span> Leela Priya Kala. All rights reserved.</p>
+            
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Copy Alert Overlay -->
+    <div class="notification" id="notification">Copied to clipboard!</div>
+
+    <!-- Contact Form Success Modal -->
+    <div class="modal-overlay" id="success-modal">
+        <div class="glass-card modal-content">
+            <div class="modal-icon"><i class="fa-solid fa-paper-plane"></i></div>
+            <h2>Message Sent Successfully!</h2>
+            <p>Thank you for reaching out, Leela Priya will get back to you shortly.</p>
+            <button class="btn btn-primary" id="close-modal">Awesome</button>
+        </div>
+    </div>
+
+    <!-- Script File -->
+    <script src="script.js"></script>
+</body>
+</html>
