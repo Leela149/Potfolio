@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Leela Priya Kala | Full Stack Developer & AI/ML Enthusiast</title>
+    <title>Leela Priya Kala | Full Stack Developer</title>
     
     <!-- Meta tags for SEO -->
-    <meta name="description" content="Portfolio of Leela Priya Kala, a motivated Full Stack Developer & AI/ML Enthusiast. Check out my projects, internships, and skill set.">
+    <meta name="description" content="Portfolio of Leela Priya Kala, a motivated Full Stack Developer. Check out my projects, internships, and skill set.">
     <meta name="keywords" content="Leela Priya Kala, Portfolio, Full Stack Developer, Python, Java, AI, ML, Web Development, India">
     
     <!-- Google Fonts -->
@@ -41,10 +41,16 @@
                     <li><a href="#projects" class="nav-link">Projects</a></li>
                     <li><a href="#education" class="nav-link">Education</a></li>
                     <li><a href="#contact" class="nav-link">Contact</a></li>
+                    <li class="mobile-resume-only"><a href="assets/resume.png" target="_blank" class="nav-link"><i class="fa-solid fa-file-lines"></i> View Resume</a></li>
                 </ul>
             </nav>
 
             <div class="nav-actions">
+                <!-- Resume Button -->
+                <a href="assets/resume.png" target="_blank" class="btn btn-secondary btn-small nav-resume-btn" style="margin: 0; padding: 8px 16px;">
+                    <i class="fa-solid fa-file-lines"></i> View Resume
+                </a>
+                
                 <!-- Theme Toggle -->
                 <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
                     <i class="fa-solid fa-moon moon-icon"></i>
@@ -86,6 +92,9 @@
                     <div class="hero-buttons">
                         <a href="#projects" class="btn btn-primary">
                             <span>View Projects</span> <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <a href="assets/resume.png" target="_blank" class="btn btn-secondary">
+                            <i class="fa-solid fa-file-lines"></i> <span>View Resume</span>
                         </a>
                         <a href="#contact" class="btn btn-secondary">
                             <span>Get in Touch</span>
@@ -165,6 +174,12 @@
                                 <span class="metric-num">2+</span>
                                 <span class="metric-label">Featured Projects</span>
                             </div>
+                        </div>
+                        
+                        <div class="about-buttons" style="margin-top: 30px;">
+                            <a href="assets/resume.png" target="_blank" class="btn btn-primary">
+                                <i class="fa-solid fa-file-lines"></i> <span>View Resume</span>
+                            </a>
                         </div>
                     </div>
                     
@@ -360,6 +375,11 @@
                                 <span>Web Development</span>
                                 <span>Testing</span>
                             </div>
+                            <div class="experience-footer">
+                                <button class="btn btn-secondary btn-small view-cert-btn" data-cert="assets/cert_kodnest.png" data-title="Full Stack Development Certificate - KodNest">
+                                    <i class="fa-solid fa-certificate"></i> <span>View Certificate</span>
+                                </button>
+                            </div>
                         </div>
                     </div>
                     
@@ -386,6 +406,11 @@
                                 <span>Model Evaluation</span>
                                 <span>Data Analysis</span>
                             </div>
+                            <div class="experience-footer">
+                                <button class="btn btn-secondary btn-small view-cert-btn" data-cert="assets/cert_besant.jpg" data-title="AI & ML Internship Certificate - Besant Technologies">
+                                    <i class="fa-solid fa-certificate"></i> <span>View Certificate</span>
+                                </button>
+                            </div>
                         </div>
                     </div>
                     
@@ -411,6 +436,11 @@
                                 <span>CSS</span>
                                 <span>JavaScript</span>
                                 <span>MySQL</span>
+                            </div>
+                            <div class="experience-footer">
+                                <button class="btn btn-secondary btn-small view-cert-btn" data-cert="assets/cert_excelr.png" data-title="Python Full Stack Internship Certificate - Excelr">
+                                    <i class="fa-solid fa-certificate"></i> <span>View Certificate</span>
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -674,6 +704,19 @@
             <h2>Message Sent Successfully!</h2>
             <p>Thank you for reaching out, Leela Priya will get back to you shortly.</p>
             <button class="btn btn-primary" id="close-modal">Awesome</button>
+        </div>
+    </div>
+
+    <!-- Certificate Viewer Modal -->
+    <div class="modal-overlay" id="cert-modal">
+        <div class="glass-card modal-content cert-modal-content">
+            <button class="modal-close-btn" id="close-cert-modal" aria-label="Close certificate image">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <h3 id="cert-modal-title" class="cert-modal-title">Certificate</h3>
+            <div class="cert-image-container">
+                <img src="" alt="Certificate" id="cert-modal-img" class="cert-modal-img">
+            </div>
         </div>
     </div>
 

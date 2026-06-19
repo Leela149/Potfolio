@@ -107,8 +107,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const words = [
         "Full Stack Developer.",
         "Python & Java Programmer.",
-        "Computer Science Graduate.",
-        "AI & Deep Learning Enthusiast."
+        "Computer Science Graduate."
     ];
     let wordIndex = 0;
     let charIndex = 0;
@@ -286,5 +285,60 @@ document.addEventListener('DOMContentLoaded', () => {
     const currentYearEl = document.getElementById('current-year');
     if (currentYearEl) {
         currentYearEl.textContent = new Date().getFullYear();
+    }
+
+    // ==========================================================================
+    // 10. Experience Certificate Modal Viewer Logic
+    // ==========================================================================
+    const certModal = document.getElementById('cert-modal');
+    const closeCertModalBtn = document.getElementById('close-cert-modal');
+    const certModalImg = document.getElementById('cert-modal-img');
+    const certModalTitle = document.getElementById('cert-modal-title');
+    const viewCertBtns = document.querySelectorAll('.view-cert-btn');
+
+    if (certModal && closeCertModalBtn && certModalImg && certModalTitle) {
+        viewCertBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const certSrc = btn.getAttribute('data-cert');
+                const certTitle = btn.getAttribute('data-title');
+
+                // Set content
+                certModalImg.src = certSrc;
+                certModalImg.alt = certTitle;
+                certModalTitle.textContent = certTitle;
+
+                // Open modal
+                certModal.classList.add('active');
+                document.body.style.overflow = 'hidden'; // Disable scroll background
+            });
+        });
+
+        const closeCertModal = () => {
+            certModal.classList.remove('active');
+            document.body.style.overflow = ''; // Restore scroll
+            // Clear src after fade out to prevent visual glitches next time it's opened
+            setTimeout(() => {
+                if (!certModal.classList.contains('active')) {
+                    certModalImg.src = '';
+                }
+            }, 300);
+        };
+
+        // Close via close button
+        closeCertModalBtn.addEventListener('click', closeCertModal);
+
+        // Close via clicking on overlay background
+        certModal.addEventListener('click', (e) => {
+            if (e.target === certModal) {
+                closeCertModal();
+            }
+        });
+
+        // Close via Escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && certModal.classList.contains('active')) {
+                closeCertModal();
+            }
+        });
     }
 });
