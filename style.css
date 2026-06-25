@@ -1157,6 +1157,7 @@ body.cursor-hover .custom-cursor {
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 16px;
     opacity: 0;
     transition: opacity var(--transition-normal);
 }
@@ -1250,6 +1251,29 @@ body.cursor-hover .custom-cursor {
     color: var(--accent);
     font-size: 0.7rem;
     margin-top: 5px;
+}
+
+.project-title a {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: inherit;
+    transition: color var(--transition-fast);
+}
+
+.project-title a:hover {
+    color: var(--primary);
+}
+
+.project-links {
+    display: flex;
+    gap: 12px;
+    margin-top: auto;
+    padding-top: 20px;
+}
+
+.project-links .btn-small {
+    margin-top: 0;
 }
 
 @media (max-width: 991px) {
